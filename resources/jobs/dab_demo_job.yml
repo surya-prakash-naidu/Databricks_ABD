@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    dab_demo_job:
+      name: dab_demo_job
+      tasks:
+        - task_key: demo_notebook
+          notebook_task:
+            notebook_path: ../notebooks/sample_notebook.py
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: STANDARD

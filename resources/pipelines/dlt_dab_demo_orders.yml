@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_dlt_orders_pipeline:
+      name: dlt_orders_pipeline
+      libraries:
+        - notebook:
+            path: ../notebooks/dlt_dab_demo_orders.sql
+      schema: ${resources.schemas.default_schema.name}
+      continuous: false
+      development: true
+      photon: true
+      channel: PREVIEW
+      catalog: ${resources.schemas.default_schema.catalog_name}
+      serverless: true

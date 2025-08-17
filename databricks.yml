@@ -1,0 +1,25 @@
+bundle:
+  name: DABlab
+
+include:
+  - src/*.yml
+  - src/env/*.yml
+  - resources/jobs/*.yml
+  - resources/pipelines/*.yml
+  - resources/schemas/*.yml
+
+permissions:
+  - user_name: surnay143@gmail.com
+    level: CAN_MANAGE
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-39d0d5cf-36ad.cloud.databricks.com/
+  
+  qa:
+    default: false
+    workspace:
+      host: https://dbc-39d0d5cf-36ad.cloud.databricks.com/

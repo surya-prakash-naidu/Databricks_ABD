@@ -1,0 +1,5 @@
+resources:
+  schemas:
+    default_schema:
+      name: default
+      catalog_name: ${var.catalog}

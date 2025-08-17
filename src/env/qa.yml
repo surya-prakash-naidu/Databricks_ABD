@@ -1,0 +1,7 @@
+targets:
+  qa:
+    permissions:
+      - user_name: surnay143@gmail.com
+        level: CAN_RUN
+      - user_name: surnay143@gmail.com
+        level: CAN_VIEW
